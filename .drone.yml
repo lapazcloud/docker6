@@ -1,0 +1,10 @@
+kind: pipeline
+name: kubebuild
+
+steps:
+- name: build
+  image: ruby:2.5
+  commands:
+  - bundle install
+  - bundle exec middleman build
+
