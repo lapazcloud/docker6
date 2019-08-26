@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+import_file File.expand_path("_redirects", config[:source]), "/_redirects"
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
